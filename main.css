@@ -17,11 +17,11 @@ a {
     height: 80px;
 }
 
-    .hd-logo img {
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-    }
+.hd-logo img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
 .hd-search {
     float: left;
@@ -54,9 +54,9 @@ form.hd-search-frm button {
     cursor: pointer;
 }
 
-    form.hd-search-frm button:hover {
-        background: #0b7dda;
-    }
+form.hd-search-frm button:hover {
+    background: #0b7dda;
+}
 
 form.hd-search-frm::after {
     content: "";
@@ -99,6 +99,7 @@ form.hd-search-frm::after {
     font-family: RR;
     margin: 13px 13px 13px 4px;
 }
+
 /* horizontal menu */
 .navibar {
     list-style-type: none;
@@ -108,25 +109,26 @@ form.hd-search-frm::after {
     background-color: #f39f21;
 }
 
-    .navibar li {
-        float: left;
-    }
+.navibar li {
+    float: left;
+}
 
-        .navibar li a.active {
-            color: #f321b2;
-        }
+.navibar li a.active {
+    color: #f321b2;
+}
 
-        .navibar li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+.navibar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-            .navibar li a:hover {
-                color: #f321b2;
-            }
+.navibar li a:hover {
+    color: #f321b2;
+}
+
 /* header user profile */
 .hd-user {
     text-overflow: ellipsis;
@@ -143,18 +145,18 @@ form.hd-search-frm::after {
     right: 0;
 }
 
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
 .drop-down:hover .dropdown-content {
     display: block;
@@ -196,26 +198,26 @@ form.hd-search-frm::after {
     letter-spacing: 0;
 }
 
-    .checkout-title-info span {
-        background: #fff;
-        position: relative;
-        z-index: 2;
-        padding-right: 7px;
-        font-weight: 600;
-        letter-spacing: 0;
-    }
+.checkout-title-info span {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 7px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
 
-    .checkout-title-info::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        top: 50%;
-        left: 0;
-        position: absolute;
-        background: #bbb;
-        z-index: 1;
-    }
+.checkout-title-info::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    background: #bbb;
+    z-index: 1;
+}
 
 .checkout-content {
     margin-top: 20px;
@@ -225,12 +227,12 @@ form.hd-search-frm::after {
     padding: 10px;
 }
 
-    .checkout-content-info input {
-        width: 500px;
-        margin: 10px 0px 0px;
-        padding: 5px;
-        height: 35px;
-    }
+.checkout-content-info input {
+    width: 500px;
+    margin: 10px 0px 0px;
+    padding: 5px;
+    height: 35px;
+}
 
 .checkout-detail {
     padding: 10px 0px;
@@ -255,22 +257,22 @@ form.hd-search-frm::after {
     margin: 5px;
 }
 
-    .checkout-btn button {
-        height: 35px;
-        background: #3c9b10;
-        color: white;
-        border-radius: 5px;
-    }
+.checkout-btn button {
+    height: 35px;
+    background: #3c9b10;
+    color: white;
+    border-radius: 5px;
+}
 /* introduce */
 .introduce-content {
     width: 70%;
     margin: 0 auto;
 }
 
-    .introduce-content p {
-        padding: 5px;
-        margin-bottom: 10px;
-    }
+.introduce-content p {
+    padding: 5px;
+    margin-bottom: 10px;
+}
 /* contact */
 .contact-agency-content * {
     padding: 2px;
@@ -300,6 +302,27 @@ form.hd-search-frm::after {
     padding-left: 15px;
     margin: 4px;
 }
+
+/* policy */
+.policy {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.policy-title {
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.policy-content {
+    padding: 20px;
+    font-size: .85rem;
+}
+
 /* product-add-new */
 .product-new-title {
     text-transform: uppercase;
@@ -361,6 +384,7 @@ form.hd-search-frm::after {
     width: 402px;
     height: 70px;
 }
+
 /* cart */
 .cart {
     margin-top: 20px;
@@ -405,14 +429,14 @@ form.hd-search-frm::after {
     height: 50px;
 }
 
-    .cart-update-btn button {
-        text-transform: uppercase;
-        float: right;
-        height: 35px;
-        background: #424141;
-        color: white;
-        text-transform: uppercase;
-    }
+.cart-update-btn button {
+    text-transform: uppercase;
+    float: right;
+    height: 35px;
+    background: #424141;
+    color: white;
+    text-transform: uppercase;
+}
 
 .cart-product-name, .cart-product-price, .cart-product-quantity {
     border-right: 1px solid gainsboro;
@@ -505,6 +529,7 @@ form.hd-search-frm::after {
     background: #4caf50;
     margin-top: 15px;
 }
+
 /* main profile page */
 .pf {
     padding-bottom: 10px;
@@ -536,9 +561,9 @@ form.hd-search-frm::after {
 }
 
     .pf-navi-avatar-thumb img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     }
 
 .pf-navi-user {
@@ -680,6 +705,7 @@ form.hd-search-frm::after {
     height: 30px;
     margin: 18px 134px;
 }
+
 /* profile- change password */
 .pf-info-detail-pass label {
     display: inline-block;
@@ -704,6 +730,7 @@ form.hd-search-frm::after {
     display: flex;
     padding-top: 30px;
 }
+
 /* khac so voi ho so */
 .pf-info-content-address {
     width: 70%;
@@ -745,6 +772,7 @@ form.hd-search-frm::after {
     font-size: .875rem;
     margin-right: 5px;
 }
+
 /* khac so voi profile */
 .btn-pf-save-pass {
     color: white;
@@ -753,6 +781,7 @@ form.hd-search-frm::after {
     height: 30px;
     margin: 18px 173px;
 }
+
 /* register page */
 .rg * {
     font-size: 1rem;
@@ -809,9 +838,9 @@ form.hd-search-frm::after {
 }
 
     .rg-btn button {
-        height: 2.125rem;
-        min-width: 8.75rem;
-        margin-left: 0.5rem;
+    height: 2.125rem;
+    min-width: 8.75rem;
+    margin-left: 0.5rem;
     }
 
 .rg-btn-left {
@@ -824,6 +853,7 @@ form.hd-search-frm::after {
     color: #fff;
     justify-content: flex-end;
 }
+
 /* login page */
 .lg * {
     font-size: 1rem;
@@ -877,9 +907,9 @@ form.hd-search-frm::after {
 }
 
     .lg-btn button {
-        height: 2.125rem;
-        min-width: 8.75rem;
-        margin-left: .5rem;
+    height: 2.125rem;
+    min-width: 8.75rem;
+    margin-left: .5rem;
     }
 
 .lg-btn-left {
@@ -892,6 +922,7 @@ form.hd-search-frm::after {
     color: #fff;
     justify-content: flex-end;
 }
+
 /* footer */
 .footer {
     border-top: 1px solid gainsboro;
@@ -902,7 +933,7 @@ form.hd-search-frm::after {
 }
 
     .footer-content > * {
-        width: 33.3333%;
+    width: 33.3333%;
     }
 
 .footer-logo > img {
@@ -941,5 +972,5 @@ form.hd-search-frm::after {
 }
 
     .footer-copyright p {
-        margin: 0;
+    margin: 0;
     }
