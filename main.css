@@ -81,7 +81,7 @@ form.hd-search-frm::after {
 }
 
 .hd-hotline-img {
-    width: 71%;
+    width: 85%;
 }
 
 .hd-cart-icon {
@@ -241,7 +241,12 @@ tr:hover {
 table a:hover {
     text-decoration: underline;
 } 
-
+/* class for hide spin in input tag */
+.quantity::-webkit-inner-spin-button, 
+.quantity::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 /* checkout */
 .checkout {
     padding: 20px;
