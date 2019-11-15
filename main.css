@@ -138,21 +138,24 @@ li.navibar-dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .navibar-dropdown-content a {
-    color: black !important;
-    padding: 12px 16px;
-    text-decoration: none;
+.navibar-dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+  
+.navibar-dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.navibar-dropdown:hover .navibar-dropdown-content {
     display: block;
-    text-align: left;
-  }
-  
-  .navibar-dropdown-content a:hover {background-color: #ddd;}
-  
-  .navibar-dropdown:hover .navibar-dropdown-content {
-    display: block;
-  }
+}
+
 /* header user profile */
 .hd-user {
     text-overflow: ellipsis;
@@ -192,7 +195,53 @@ li.navibar-dropdown {
     border-bottom: 1px solid gainsboro;
     margin-bottom: 30px;
     text-align: center;
+    text-transform:uppercase;
 }
+/* admin menu */
+.admin-name {
+    float:right !important;
+}
+.admin-logout {
+    right: 8px;
+}
+/* admin view all user*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #d8d8d8;
+    font-size: .95rem;
+}
+
+th {
+    background-color: #f39f21;
+    color: white;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    text-align: left;
+    max-width: 490px;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+table a:hover {
+    text-decoration: underline;
+} 
+
 /* checkout */
 .checkout {
     padding: 20px;
@@ -675,11 +724,6 @@ li.navibar-dropdown {
     font-size: .875rem;
 }
 
-.pf-info-main {
-    display: flex;
-    padding-top: 30px;
-}
-
 .pf-info-content {
     width: 70%;
     border-right: 1px solid gainsboro;
@@ -725,7 +769,7 @@ li.navibar-dropdown {
 .btn-pf-save {
     color: white;
     background-color: orange;
-    width: 60px;
+    width: 80px;
     height: 30px;
     margin: 18px 134px;
 }
@@ -754,7 +798,51 @@ li.navibar-dropdown {
     display: flex;
     padding-top: 30px;
 }
+/* pagination */
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
 
+.pagination-center {
+    display: inline-block;
+}
+
+.pagination-center a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    }
+
+.pagination-center a.active {
+    background-color: #f39f21;
+    color: white;
+    border: 1px solid #f39f21;
+    }
+/* go to top */
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+    #scroll-to-top:hover {
+    background-color: #555;
+    }
 /* khac so voi ho so */
 .pf-info-content-address {
     width: 70%;
