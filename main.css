@@ -138,21 +138,24 @@ li.navibar-dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .navibar-dropdown-content a {
-    color: black !important;
-    padding: 12px 16px;
-    text-decoration: none;
+.navibar-dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+  
+.navibar-dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.navibar-dropdown:hover .navibar-dropdown-content {
     display: block;
-    text-align: left;
-  }
-  
-  .navibar-dropdown-content a:hover {background-color: #ddd;}
-  
-  .navibar-dropdown:hover .navibar-dropdown-content {
-    display: block;
-  }
+}
+
 /* header user profile */
 .hd-user {
     text-overflow: ellipsis;
@@ -193,6 +196,13 @@ li.navibar-dropdown {
     margin-bottom: 30px;
     text-align: center;
     text-transform:uppercase;
+}
+/* admin menu */
+.admin-name {
+    float:right !important;
+}
+.admin-logout {
+    right: 8px;
 }
 /* admin view all user*/
 table {
