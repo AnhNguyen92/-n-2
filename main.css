@@ -724,11 +724,6 @@ table a:hover {
     font-size: .875rem;
 }
 
-.pf-info-main {
-    display: flex;
-    padding-top: 30px;
-}
-
 .pf-info-content {
     width: 70%;
     border-right: 1px solid gainsboro;

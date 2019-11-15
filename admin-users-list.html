@@ -9,80 +9,73 @@
 	<title>Beauty Comestic</title>
 </head>
 <body>
-<!-- Header -->
-<div class="hd">
-        <div class="hd-logo">
-            <img src="logo1.png" alt="Header image">
-        </div>
-        <div class="hd-search">
-            <form class="hd-search-frm">
-                <input type="text" placeholder="Tìm kiếm..." name="globalsearch">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <div class="hd-link">
-            <div class="hd-user drop-down">
-                <div><i class="fa fa-user" aria-hidden="true" style="margin-right: 6px"></i>Dương Đức Anh</div>
-                <div class="dropdown-content">
-                    <a href="profile.html" title="Tài khoản của tôi">Tài khoản của tôi</a>
-                    <a href="login.html" title="Đăng xuất">Thoát</a>
-                </div>
-            </div>
-            <div class="hd-banner">
-                <div class="hd-hotline">
-                    <img class="hd-hotline-img" src="hotline-6.png" alt="Hotline">
-                </div>
-                <div class="hd-cart">
-                    <img class="hd-cart-icon" src="cart-icon.png" alt="image">
-                    <span class="hd-cart-count">0</span>
-                </div>
-            </div>
+    <!-- Header -->
+    <div class="hd">
+        <div>
+            <img src="logo2.png" style="height: 70px;" alt="Header image">
         </div>
     </div>
     <hr>
     <ul class="navibar">
-        <li class="navi-item"><a class="active" href="#home">Home</a></li>
+        <li class="navi-item"><a class="active" href="#">TRANG QUẢN TRỊ</a></li>
         <li class="navi-item navibar-dropdown">
-            <a class="navibar-dropbtn" href="javascript:void(0)">Sản Phẩm<i class="fa fa-chevron-circle-down" style="padding-left:5px;" aria-hidden="true"></i></a>
+            <a class="navibar-dropbtn" href="javascript:void(0)">DANH MỤC SẢN PHẨM<i class="fa fa-chevron-circle-down" style="padding-left:5px;" aria-hidden="true"></i></a>
             <div class="navibar-dropdown-content">
-                <a href="#">Loại Sản Phẩm 1</a>
-                <a href="#">Loại Sản Phẩm 2</a>
-                <a href="#">Loại Sản Phẩm 3</a>
+                <a href="#">Danh sách danh mục SP</a>
+                <a href="#">Thêm mới danh mục SP</a>
             </div>
         </li>
-        <li class="navi-item"><a href="#contact">Liên Lạc</a></li>
-        <li class="navi-item"><a href="#about">Giới Thiệu</a></li>
+        <li class="navi-item navibar-dropdown">
+            <a class="navibar-dropbtn" href="javascript:void(0)">SẢN PHẨM<i class="fa fa-chevron-circle-down" style="padding-left:5px;" aria-hidden="true"></i></a>
+            <div class="navibar-dropdown-content">
+                <a href="#">Danh sách sản phẩm</a>
+                <a href="#">Thêm mới sản phẩm</a>
+            </div>
+        </li>
+        <li class="navi-item navibar-dropdown">
+            <a class="navibar-dropbtn" href="javascript:void(0)">THÀNH VIÊN<i class="fa fa-chevron-circle-down" style="padding-left:5px;" aria-hidden="true"></i></a>
+            <div class="navibar-dropdown-content">
+                <a href="#">Danh sách</a>
+                <a href="#">Thêm mới</a>
+            </div>
+        </li>
+        <li class="navi-item navibar-dropdown admin-name hd-user">
+            <a class="navibar-dropbtn" href="javascript:void(0)">Chào <span style="color: blue;">Dương Đức Anh</span><i class="fa fa-chevron-circle-down" style="padding-left:5px;" aria-hidden="true"></i></a>
+            <div class="navibar-dropdown-content admin-logout">
+                <a href="#">ĐĂNG XUẤT</a>
+            </div>
+        </li>
     </ul>
-<div class="page-title">DANH SÁCH NGƯỜI DÙNG</div>
+    <div class="page-title">DANH SÁCH NGƯỜI DÙNG</div>
 
-<table class="users-list">
-    <tr>
-        <th>ID</th>
-        <th>Email</th>
-		<th>Họ tên</th>
-        <th>Điện thoại</th>
-        <th>Giới tính</th>
-		<th>Địa chỉ</th>
-        <th>Loại người dùng</th>
-		<th>Trạng thái</th>
-		<th>Tác vụ</th>
-    </tr>
+    <table class="users-list">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Họ tên</th>
+            <th>Điện thoại</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ</th>
+            <th>Loại người dùng</th>
+            <th>Trạng thái</th>
+            <th>Tác vụ</th>
+        </tr>
         <tr>
             <td>123456</td>
             <td>duongducanh8x@gmai.com</td>
-			<td>Duong Duc Anh</td>
+            <td>Duong Duc Anh</td>
             <td>0912345678</td>
-			<td>Nam</td>
+            <td>Nam</td>
             <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
             <td>Người dùng</td>
-	        <td>Không kích hoạt</td>
+            <td>Không kích hoạt</td>
             <td align="center">
                 <a href="#"> Sửa </a>
                 &nbsp;
                 <a href="#"> Xóa </a>
             </td>
         </tr>
-		<!-- xóa đoạn này -->
+        <!-- xóa đoạn này -->
         <tr>
             <td>123456</td>
             <td>duongducanh8x@gmai.com</td>
@@ -113,21 +106,21 @@
                 <a href="#"> Xóa </a>
             </td>
         </tr>
-</table>
-<!-- pagination -->
-	<div class="pagination">
-		<div class="pagination-center">
-		<a href="#">&laquo;</a>
-		<a href="#" class="active">1</a>
-		<a href="#" >2</a>
-		<a href="#">3</a>
-		<a href="#">4</a>
-		<a href="#">5</a>
-		<a href="#">6</a>
-		<a href="#">&raquo;</a>
-		</div>
-	</div>
-<!-- footer -->
+    </table>
+    <!-- pagination -->
+    <div class="pagination">
+        <div class="pagination-center">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <!-- footer -->
     <div class="footer">
         <div class="footer-content">
             <div class="footer-logo">
