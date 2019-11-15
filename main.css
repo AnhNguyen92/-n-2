@@ -192,6 +192,7 @@ li.navibar-dropdown {
     border-bottom: 1px solid gainsboro;
     margin-bottom: 30px;
     text-align: center;
+    text-transform:uppercase;
 }
 /* admin view all user*/
 table {
@@ -763,7 +764,7 @@ table a:hover {
 .btn-pf-save {
     color: white;
     background-color: orange;
-    width: 60px;
+    width: 80px;
     height: 30px;
     margin: 18px 134px;
 }
@@ -792,7 +793,51 @@ table a:hover {
     display: flex;
     padding-top: 30px;
 }
+/* pagination */
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
 
+.pagination-center {
+    display: inline-block;
+}
+
+.pagination-center a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    }
+
+.pagination-center a.active {
+    background-color: #f39f21;
+    color: white;
+    border: 1px solid #f39f21;
+    }
+/* go to top */
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+    #scroll-to-top:hover {
+    background-color: #555;
+    }
 /* khac so voi ho so */
 .pf-info-content-address {
     width: 70%;
