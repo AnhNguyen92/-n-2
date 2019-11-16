@@ -11,6 +11,9 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 .hd-logo {
     float: left;
     width: 33.3%;
@@ -821,13 +824,13 @@ table a:hover {
     transition: background-color .3s;
     border: 1px solid #ddd;
     margin: 0 4px;
-    }
+}
 
 .pagination-center a.active {
     background-color: #f39f21;
     color: white;
     border: 1px solid #f39f21;
-    }
+}
 /* go to top */
 #scroll-to-top {
     display: none;
@@ -845,9 +848,9 @@ table a:hover {
     border-radius: 4px;
 }
 
-    #scroll-to-top:hover {
+#scroll-to-top:hover {
     background-color: #555;
-    }
+}
 /* khac so voi ho so */
 .pf-info-content-address {
     width: 70%;
@@ -899,13 +902,12 @@ table a:hover {
     margin: 18px 173px;
 }
 
-/* register page */
-.rg * {
+/* register page, login page */
+.rg-lg * {
     font-size: 1rem;
     box-sizing: content-box;
 }
-
-.rg {
+.rg-lg {
     width: 400px;
     height: fit-content;
     border: 1px;
@@ -919,125 +921,47 @@ table a:hover {
     margin: auto;
     padding: 20px 20px 10px 20px;
 }
-
-.rg-link {
+.rg-lg-link {
     padding: 10px 0px;
 }
-
-.rg-link-left {
+.rg-lg-link-left {
     text-transform: uppercase;
 }
-
-.rg-link-right {
+.rg-lg-link-right {
     float: right;
 }
-
-.rg a {
+.rg-lg a {
     color: #ee4d2d;
-    text-decoration: none;
 }
-
-.rg-frm input {
+.rg-lg-frm input {
     width: 96%;
     height: 20px;
     border-radius: 10px;
     padding: 5px;
     margin: 10px 0px;
 }
-
-.rg-forgotpass {
-    margin-bottom: 30px;
-}
-
-.rg-btn {
+.rg-lg-btn {
     float: right;
-    margin: 20px 0px 20px 0px;
+    margin-top: 20px;
 }
-
-    .rg-btn button {
+.rg-lg-btn button {
     height: 2.125rem;
     min-width: 8.75rem;
     margin-left: 0.5rem;
-    }
-
-.rg-btn-left {
-    border: 0;
-    background: 0;
 }
-
-.rg-btn-right {
+.rg-lg-btn-left {
+    border: 0;
+    background: auto;
+    cursor: pointer;
+}
+.rg-lg-btn-left:hover {
+    color:white;
+}
+.rg-lg-btn-right {
     background-color: #ee4d2d;
     color: #fff;
     justify-content: flex-end;
-}
-
-/* login page */
-.lg * {
-    font-size: 1rem;
-    box-sizing: content-box;
-}
-
-.lg {
-    width: 400px;
-    height: fit-content;
-    border: 1px;
-    background-color: #f3f3f3;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 20px 20px 10px 20px;
-}
-
-.lg-link {
-    padding: 10px 0px;
-}
-
-.lg-link-left {
-    text-transform: uppercase;
-}
-
-.lg a {
-    float: right;
-    color: #ee4d2d;
-    text-decoration: none;
-}
-
-.lg-frm input {
-    width: 96%;
-    height: 20px;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px 0px;
-}
-
-.lg-forgotpass {
-    margin-bottom: 30px;
-}
-
-.lg-btn {
-    float: right;
-    margin-bottom: 20px;
-}
-
-    .lg-btn button {
-    height: 2.125rem;
-    min-width: 8.75rem;
-    margin-left: .5rem;
-    }
-
-.lg-btn-left {
-    border: 0;
-    background: 0;
-}
-
-.lg-btn-right {
-    background-color: #ee4d2d;
-    color: #fff;
-    justify-content: flex-end;
+    cursor: pointer;
 }
 
 /* footer */
@@ -1049,9 +973,9 @@ table a:hover {
     display: flex;
 }
 
-    .footer-content > * {
+.footer-content > * {
     width: 33.3333%;
-    }
+}
 
 .footer-logo > img {
     width: 100%;
@@ -1088,6 +1012,6 @@ table a:hover {
     line-height: 30px;
 }
 
-    .footer-copyright p {
+.footer-copyright p {
     margin: 0;
-    }
+}

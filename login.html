@@ -7,24 +7,27 @@
 	<title>Beauty Cosmetic</title>
 </head>
 <body>
-	<div class="lg">
+	<div class="rg-lg">
 		<img src="login-logo1.png" alt="logo" style="width: 100%;">
-		<div class="lg-link">
-			<label class="lg-link-left">Đăng nhập</label>
-			<a  href="register.html" class="lg-link-right">Đăng ký</a>
+		<div class="rg-lg-link">
+			<label class="rg-lg-link-left">Đăng nhập</label>
+			<a  href="register.html" class="rg-lg-link-right">Đăng ký</a>
 		</div>
-		<form class="lg-frm">
+		<form class="rg-lg-frm" method="POST" action="">
+			<!-- <?php if (isset($error) && $error == true): ?> -->
+				<p style="color: red;display: none;">Sai Email hoặc Mật khẩu!</p>
+			<!-- <?php endif; ?> -->
 			<div class="lg-input">
-				<input type="text" name="username" placeholder="Tên đăng nhập">
+				<input type="email" name="email" placeholder="Email đăng nhập">
 				<input type="password" name="password" placeholder="Mật khẩu">
 			</div>
 			<div class="lg-forgotpass">
-				<a href="#" >Quên mật khẩu</a>
+				<a href="#" class="rg-lg-link-right">Quên mật khẩu</a>
 				<div style="clear: both;"></div>
 			</div>
-			<div class="lg-btn">
-				<button class="lg-btn-left">Thoát</button>
-				<button class="lg-btn-right" type="submit">Đăng nhập</button>
+			<div class="rg-lg-btn">
+				<button class="rg-lg-btn-left">Thoát</button>
+				<button class="rg-lg-btn-right" type="submit">Đăng nhập</button>
 			</div>
 		</form>
 	</div>
