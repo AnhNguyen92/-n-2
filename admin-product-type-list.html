@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -51,47 +51,20 @@
             </div>
         </li>
     </ul>
-    <div class="page-title">DANH SÁCH NGƯỜI DÙNG</div>
+    <div class="page-title">DANH SÁCH LOẠI SẢN PHẨM</div>
     <div style="margin-bottom: 20px;">
-        <a class="grid-add-new" style="text-decoration:none;" href="#">Thêm mới</a>
+        <button class="grid-add-new" id="gridAddNew" style="text-decoration:none;" href="#">Thêm mới</button>
     </div>
-    <table class="grid-list">
-        <tr>
+    <table id="listGrid">
+        <tr id="titleRow">
             <th>ID</th>
-            <th>Email</th>
-            <th>Họ tên</th>
-            <th>Điện thoại</th>
-            <th>Giới tính</th>
-            <th>Địa chỉ</th>
-            <th>Loại người dùng</th>
+            <th>Tên danh mục sản phẩm</th>
             <th>Trạng thái</th>
             <th>Tác vụ</th>
         </tr>
         <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
-            <td>Không kích hoạt</td>
-            <td class="grid-action">
-                <div class="grid-action-link">
-                    <a href="#">Sửa</a>
-                    <a href="#">Xóa</a>
-                </div>
-            </td>
-        </tr>
-        <!-- xóa đoạn này -->
-        <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
+            <td>1</td>
+            <td><a href="#>">Dưỡng da</a></td>
             <td>Không kích hoạt</td>
             <td class="grid-action">
                 <div class="grid-action-link">
@@ -101,13 +74,19 @@
             </td>
         </tr>
         <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
+            <td>2</td>
+            <td><a href="#>">Dưỡng ẩm</a></td>
+            <td>Kích hoạt</td>
+            <td class="grid-action">
+                <div class="grid-action-link">
+                    <a href="#">Sửa</a>
+                    <a href="#">Xóa</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="#>">Dưỡng toàn thân</a></td>
             <td>Không kích hoạt</td>
             <td class="grid-action">
                 <div class="grid-action-link">
@@ -117,13 +96,8 @@
             </td>
         </tr>
         <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
+            <td>4</td>
+            <td><a href="#>">Dưỡng da</a></td>
             <td>Không kích hoạt</td>
             <td class="grid-action">
                 <div class="grid-action-link">
@@ -133,14 +107,9 @@
             </td>
         </tr>
         <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
-            <td>Không kích hoạt</td>
+            <td>5</td>
+            <td><a href="#>">Dưỡng ẩm</a></td>
+            <td>Kích hoạt</td>
             <td class="grid-action">
                 <div class="grid-action-link">
                     <a href="#">Sửa</a>
@@ -149,61 +118,8 @@
             </td>
         </tr>
         <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
-            <td>Không kích hoạt</td>
-            <td class="grid-action">
-                <div class="grid-action-link">
-                    <a href="#">Sửa</a>
-                    <a href="#">Xóa</a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
-            <td>Không kích hoạt</td>
-            <td class="grid-action">
-                <div class="grid-action-link">
-                    <a href="#">Sửa</a>
-                    <a href="#">Xóa</a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
-            <td>Không kích hoạt</td>
-            <td class="grid-action">
-                <div class="grid-action-link">
-                    <a href="#">Sửa</a>
-                    <a href="#">Xóa</a>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>123456</td>
-            <td>duongducanh8x@gmai.com</td>
-            <td>Duong Duc Anh</td>
-            <td>0912345678</td>
-            <td>Nam</td>
-            <td>142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</td>
-            <td>Người dùng</td>
+            <td>6</td>
+            <td><a href="#>">Dưỡng toàn thân</a></td>
             <td>Không kích hoạt</td>
             <td class="grid-action">
                 <div class="grid-action-link">
@@ -299,10 +215,6 @@
             } else {
                 mybutton.style.display = "none";
             }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

@@ -199,6 +199,11 @@ li.navibar-dropdown {
     margin-bottom: 30px;
     text-align: center;
     text-transform:uppercase;
+    font-size: 1.5rem;
+}
+.alert {
+    color: green;
+    text-align:center;
 }
 /* admin menu */
 .admin-name {
@@ -207,7 +212,17 @@ li.navibar-dropdown {
 .admin-logout {
     right: 8px;
 }
-/* admin view all user*/
+.grid-add-new {
+    background: green;
+    height: 40px;
+    width: 100px;
+    color: white;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+/* admin view all user, product, product type */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -229,7 +244,7 @@ th, td {
 }
 
 td {
-    text-align: left;
+    text-align: center;
     max-width: 490px;
 }
 
@@ -243,7 +258,15 @@ tr:hover {
 
 table a:hover {
     text-decoration: underline;
-} 
+}
+.grid-action {
+    width:110px;
+}
+.grid-action-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /* class for hide spin in input tag */
 .quantity::-webkit-inner-spin-button, 
 .quantity::-webkit-outer-spin-button { 
@@ -450,8 +473,8 @@ table a:hover {
 
 .product-new-name input, textarea, optgroup {
     width: 400px;
-    padding: 5px;
-    margin: 8px;
+    /* padding: 5px;
+    margin: 8px; */
 }
 
 .product-new-name select {
@@ -712,10 +735,12 @@ table a:hover {
 .pf-info-content {
     padding-top: 30px;
 }
-
+.pf-info-detail {
+    margin-bottom: 10px;
+}
 .pf-info-detail label {
     display: inline-block;
-    width: 110px;
+    width: 120px;
     text-align: right;
     text-transform: capitalize;
     color: rgba(85,85,85,.8);
@@ -725,7 +750,7 @@ table a:hover {
 
 .pf-info-detail input {
     display: inline-block;
-    width: 334px;
+    width: 400px;
     text-align: left;
     padding: 10px;
     height: 40px;
@@ -777,9 +802,10 @@ table a:hover {
 .btn-pf-save {
     color: white;
     background-color: orange;
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     margin: 18px 134px;
+    font-size: medium;
 }
 
 /* profile- change password */
@@ -825,7 +851,9 @@ table a:hover {
     border: 1px solid #ddd;
     margin: 0 4px;
 }
-
+.pagination-center a:hover {
+    background:cadetblue;
+}
 .pagination-center a.active {
     background-color: #f39f21;
     color: white;
@@ -873,16 +901,6 @@ table a:hover {
     border-radius: 50%;
 }
 
-.pf-info-select-img {
-    text-align: center;
-    width: 100px;
-    margin: 0 auto;
-    height: 50px;
-    border: 1px solid gainsboro;
-    display: flex;
-    align-items: center;
-}
-
 .pf-info-date-of-birth select {
     width: 105px;
     display: inline-block;
@@ -901,7 +919,50 @@ table a:hover {
     height: 30px;
     margin: 18px 173px;
 }
-
+/* products */
+.product-list {
+    display: flex;
+    width: 1165px;
+    margin: 0 auto;
+    margin-top:10px;
+    flex-flow: row wrap;
+    
+}
+.product-item {
+    width: 320px;
+    height: 430px;
+    background-color: #f1f1f1;
+    margin: 30px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.product-item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+.product-item-name {
+    text-align: center;
+    padding: 6px 16px;
+    line-height: 1.5;
+    color:black;
+}
+.product-item-price {
+    text-align: center;
+    color:black;
+    padding-bottom: 4px;
+}
+.add-to-cart {
+    background: #f39f21;
+    margin: 3px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
 /* register page, login page */
 .rg-lg * {
     font-size: 1rem;
