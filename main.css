@@ -85,6 +85,7 @@ form.hd-search-frm::after {
 
 .hd-hotline-img {
     width: 85%;
+    max-height: 62px;
 }
 
 .hd-cart-icon {
