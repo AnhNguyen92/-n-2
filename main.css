@@ -107,8 +107,8 @@ form.hd-search-frm::after {
 /* horizontal menu */
 .navibar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     overflow: hidden;
     background-color: #f39f21;
 }
