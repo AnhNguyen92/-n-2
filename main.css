@@ -638,7 +638,6 @@ table a:hover {
 .pf {
     padding-bottom: 10px;
     background: #f1f1f1;
-    height: 600px;
 }
 
 .pf-main {
@@ -767,7 +766,7 @@ table a:hover {
     padding: 0 30px;
 }
 
-.pf-info-gender input {
+.pf-info-check input {
     width: auto;
     height: auto;
     margin: 0 8px;
@@ -808,6 +807,16 @@ table a:hover {
     font-size: medium;
 }
 
+.product-choose-img {
+    cursor: pointer;
+    margin: 0 auto;
+    border: 1px solid rgba(85,85,85,.8);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
 /* profile- change password */
 .pf-info-detail-pass label {
     display: inline-block;
@@ -826,6 +835,11 @@ table a:hover {
     padding: 10px;
     height: 40px;
     font-size: .875rem;
+}
+
+.pf-info-navi {
+    height:60px;
+    border-bottom: 1px solid #d0cccc;
 }
 
 .pf-info-main {

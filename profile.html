@@ -69,19 +69,10 @@
                         <i class="fa fa-user-circle"></i>
                         <a id="my-profile" href="profile.html">Tài khoản của tôi</a>
                     </div>
-                    <div class="pf-link-detail">
-                        <a href="profile.html" style="color: #f39f21;">Hồ sơ</a>
-                    </div>
-                    <div class="pf-link-detail">
-                        <a class="pf-link-detail" href="profile-address.html">Địa chỉ</a>
-                    </div>
-                    <div class="pf-link-detail">
-                        <a href="profile-password.html">Đổi mật khẩu</a>
-                    </div>
                 </div>
             </div>
             <div class="pf-info">
-                <div class="pf-info-navi" style="height:60px;border-bottom: 1px solid #d0cccc;">
+                <div class="pf-info-navi">
                     <div class="pf-info-navi-title">Hồ sơ của tôi</div>
                     <div class="pf-info-navi-note">Quản lý thông tin hồ sơ để bảo mật tài khoản</div>
                 </div>
@@ -89,22 +80,21 @@
                     <div class="pf-info-content">
                         <div>
                             <div class="pf-info-detail">
-                                <label>Tên</label>
-                                <input type="text" name="name" value="Nguyễn Tuấn Anh">
+                                <label>Họ và tên</label>
+                                <input type="text" name="hovaten" value="Dương Đức Anh">
                             </div>
                             <div class="pf-info-detail">
                                 <label>Email</label>
-                                <input type="text" name="email" style="border: none;" readonly value="anh.nguyenids@hcmut.edu.vn">
+                                <input type="email" name="email" style="border: none;" readonly value="1533408@hcmut.edu.vn">
                             </div>
                             <div class="pf-info-detail">
                                 <label>Số điện thoại</label>
-                                <input type="text" name="phone" value="098778928">
+                                <input type="tel" name="phone" value="0912345678">
                             </div>
                             <div class="pf-info-detail pf-info-gender">
                                 <label>Giới tính</label>
-                                <input type="radio" name="gender" value="male">Nam
-                                <input type="radio" name="gender" value="female">Nữ
-                                <input type="radio" name="gender" value="other">Khác
+                                <input checked type="radio" name="gioitinh" value="male">Nam
+                                <input type="radio" name="gioitinh" value="female">Nữ
                             </div>
                             <div class="pf-info-detail pf-info-date-of-birth">
                                 <label>Ngày sinh</label>
@@ -230,6 +220,14 @@
                                     <option value='1948'>1948</option>
                                     <option value='1947'>1947</option>
                                 </select>
+                            </div>
+                            <div class="pf-info-detail">
+                                <label>Địa chỉ</label>
+                                <input type="text" name="address" value="142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh">
+                            </div>
+                            <div class="pf-info-detail">
+                                <label>Mật khẩu</label>
+                                <input type="password" name="password" value="123456">
                             </div>
                         </div>
                     </div>

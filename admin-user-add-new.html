@@ -46,6 +46,7 @@
     </ul>
     <div>
         <div class="page-title">THÊM NGƯỜI DÙNG MỚI</div>
+        <p class="alert">Sản phẩm đã được thêm mới thành công!</p>
         <div class="pf-info-main">
             <div class="">
                 <div>
@@ -65,11 +66,16 @@
                         <label>Số điện thoại</label>
                         <input type="tel" pattern="[0-9]{10}" name="phone">
                     </div>
-                    <div class="pf-info-detail pf-info-gender">
+                    <div class="pf-info-detail pf-info-check">
                         <label>Giới tính</label>
                         <input checked type="radio" name="gender" value="male">Nam
                         <input type="radio" name="gender" value="female">Nữ
                         <input type="radio" name="gender" value="other">Khác
+                    </div>
+                    <div class="pf-info-detail pf-info-check">
+                        <label>Trạng thái</label>
+                        <input checked type="radio" name="trangthai" value="male">Kích hoạt
+                        <input type="radio" name="trangthai" value="female">Không kích hoạt
                     </div>
                     <div class="pf-info-detail pf-info-date-of-birth">
                         <label>Ngày sinh</label>
@@ -198,7 +204,7 @@
                     </div>
                     <div class="pf-info-detail">
                         <label>Địa chỉ</label>
-                        <input type="text" name="address" value="142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh">
+                        <input type="text" name="address" value="">
                     </div>
                 </div>
             </div>
