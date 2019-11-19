@@ -14,7 +14,7 @@ Chỉ cần download và mở cá file html lên trình duyệt bất kỳ. Do m
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/)
 * [JAVASCRIPT](https://www.w3schools.com/js/)
-* [FONT AWESOME ICON] (https://fontawesome.com/icons?d=gallery)
+* [FONT AWESOME ICON](https://fontawesome.com/icons?d=gallery)
 ## Contributing
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 ## Versioning
