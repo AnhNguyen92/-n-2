@@ -288,16 +288,28 @@ table a:hover {
 
 /* product-detail */
 .product-content {
-    background:red;
     width:1000px;
     margin:10px auto;
 
 }
 
 .product-image {
+    display:flex;
+    padding-top:20px;
+}
+.product-image-content {
     width:400px;
     height:400px;
     position:relative;
+}
+
+.product-detail-info {
+    padding:0px 30px;
+    margin-bottom: 20px;
+}
+
+.product-detail-info > div {
+    margin-bottom: 20px;
 }
 
 .product-content-title {
@@ -330,10 +342,19 @@ table a:hover {
     background: #bbb;
     z-index: 1;
 }
-    /* checkout */
-    .checkout {
-        padding: 20px;
-    }
+
+.product-name {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    color:#ff6501;
+}
+
+/* checkout */
+.checkout {
+    padding: 20px;
+}
 
 .checkout-title {
     margin: 30px auto;

@@ -7,6 +7,52 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Beauty Comestic</title>
+    <style>
+        .quantity-product {
+            border:1px solid grey;
+            text-align:center;
+            
+            width:166px;
+            display:flex;
+            border-radius: 5px;
+        }
+    
+        .quantity-product * {
+            font-size: x-large;
+            font-weight: 600;
+        }
+    
+        .quantity-up-btn, .quantity-down-btn {
+            width:35px;
+            height:35px;
+            margin:0px;
+            padding:0px;
+        }
+    
+        .quantity-up-btn {
+            background:#3c9b10;;
+        }
+    
+        /* .quantity-down-btn {
+            background:red;
+        } */
+    
+        .quantity-input {
+            text-align:center;
+            width:100px;
+            height:35px;
+            margin: 0px;
+            padding:0px;
+        }
+    
+        .quantity-input::-webkit-outer-spin-button,
+        .quantity-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,26 +100,38 @@
         <li class="navi-item"><a href="#about">Giới Thiệu</a></li>
     </ul>
     <div class="product-content">
-        <div style="display:flex;padding-top:20px">
-            <div class="product-image">
+        <div class="product-image">
+            <div class="product-image-content">
                 <img src="product.jpg" width="400" height="400" alt="image"/>
             </div>
-            <div style="background:green; padding:0px 30px;">
+            <div class="product-detail-info">
                 <div class="product-content-title">
                     <span>THÔNG TIN SẢN PHẨM</span>
                 </div>
                 <div class="product-name">Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ</div>
-                <div>185 000 ₫</div>
+                <div><span class="product-price">185 000 ₫<span></div>
+                <div class="quantity-product">
+                    <button class="quantity-down-btn" type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+                        <span>-</span>
+                    </button>          
+                    <input class="quantity-input" type="number" name="number" min="0" max="100" value="0">
+                    <button class="quantity-up-btn" type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+                        <span>+</span>
+                    </button>
+                </div>
                 <div>
-                    <input type="number" min="1" max="30" value="1"/>
+                    <div>
+                        <p>
+                            * <strong>TINH CHẤT DƯỠNG MI & MÀY – HOA ANH THẢO</strong> Kích thích mọc mi dài, khỏe, dưỡng mi và mày, bớt gãy rụng.Là sự kết hợp tinh tế giữa các dầu dưỡng nền thực vật, vitamin E và đặc biệt là tinh dầu Hương Thảo Rosemary, giúp kích thích mọc dài lông mi & lông mày.
+                            Sản phẩm này đặc biệt giành cho các nàng có hàng mi ngắn, mi rụng nhiều. Kết quả sẽ thấy rõ sau 1 tháng sử dụng.
+                        </p><p>
+                            * <strong>GEL RỬA TAY KHÔ NHA ĐAM</strong>: Sản phẩm hổ trợ giúp diệt vi khuẩn, khử trùng, sát khuẩn cho đôi bàn tay của bạn trong trường hợp không thể rửa tay bằng nước và xà phòng.
+                            </p>
+                        </div>
+                    </div>
+                <div>
                     <button>Chọn Mua</button>
                 </div>
-            </div>
-        </div>
-        <div style="background:grey;">
-            <div>Thông tin chi tiết</div>
-            <div>
-
             </div>
         </div>
     </div>
