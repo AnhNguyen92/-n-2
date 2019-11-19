@@ -1,4 +1,4 @@
-/* header */
+﻿/* header */
 * {
     box-sizing: border-box;
 }
@@ -13,6 +13,9 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+button {
+    cursor: pointer;
 }
 
 .hd-logo {
@@ -290,7 +293,6 @@ table a:hover {
 .product-content {
     width:1000px;
     margin:10px auto;
-
 }
 
 .product-image {
@@ -350,6 +352,47 @@ table a:hover {
 .product-price {
     color:#ff6501;
 }
+
+/*cần style lại sau*/
+.product-buy, .product-add-to-cart {
+    text-transform: uppercase;
+    height: 35px;
+    color: white;
+    text-transform: uppercase;
+    background: #4caf50;
+    margin-top: 15px;
+}
+
+.product-revalent-title {
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 7px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.product-revalent-title span {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 7px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.product-revalent-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    background: #bbb;
+    z-index: 1;
+    }
 
 /* checkout */
 .checkout {

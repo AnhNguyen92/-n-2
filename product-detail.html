@@ -49,7 +49,7 @@
         .quantity-input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             -moz-appearance: none;
-            appearance: none;
+            /*appearance: none;*/
             margin: 0;
         }
     </style>
@@ -102,35 +102,150 @@
     <div class="product-content">
         <div class="product-image">
             <div class="product-image-content">
+                <!--hình ảnh sản phẩm-->
                 <img src="product.jpg" width="400" height="400" alt="image"/>
             </div>
             <div class="product-detail-info">
                 <div class="product-content-title">
                     <span>THÔNG TIN SẢN PHẨM</span>
                 </div>
+                <!--tên sản phẩm-->
                 <div class="product-name">Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ</div>
-                <div><span class="product-price">185 000 ₫<span></div>
+                <div>
+                    <!--giá sản phẩm-->
+                    <span class="product-price">185 000 ₫</span>
+                </div>
                 <div class="quantity-product">
+                    <!-- tăng số lượng mua-->
                     <button class="quantity-down-btn" type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
                         <span>-</span>
-                    </button>          
-                    <input class="quantity-input" type="number" name="number" min="0" max="100" value="0">
+                    </button>
+                    <input class="quantity-input" type="number" name="number" min="0" max="100" value="1">
+                    <!-- tăng số lượng mua-->
                     <button class="quantity-up-btn" type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
                         <span>+</span>
                     </button>
                 </div>
                 <div>
+                    <!-- chi tiet san pham-->
                     <div>
                         <p>
                             * <strong>TINH CHẤT DƯỠNG MI & MÀY – HOA ANH THẢO</strong> Kích thích mọc mi dài, khỏe, dưỡng mi và mày, bớt gãy rụng.Là sự kết hợp tinh tế giữa các dầu dưỡng nền thực vật, vitamin E và đặc biệt là tinh dầu Hương Thảo Rosemary, giúp kích thích mọc dài lông mi & lông mày.
                             Sản phẩm này đặc biệt giành cho các nàng có hàng mi ngắn, mi rụng nhiều. Kết quả sẽ thấy rõ sau 1 tháng sử dụng.
                         </p><p>
                             * <strong>GEL RỬA TAY KHÔ NHA ĐAM</strong>: Sản phẩm hổ trợ giúp diệt vi khuẩn, khử trùng, sát khuẩn cho đôi bàn tay của bạn trong trường hợp không thể rửa tay bằng nước và xà phòng.
-                            </p>
-                        </div>
+                        </p>
                     </div>
+                </div>
                 <div>
-                    <button>Chọn Mua</button>
+                    <button class="product-buy">Chọn Mua</button>
+                    <button class="product-add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sản phẩm cùng loại, hiển thị 6 sản phẩm-->
+    <div class="product-revalent">
+        <div class="product-revalent-title">
+            <span>SẢN PHẨM CÙNG LOẠI</span>
+        </div>
+        <div class="product-revalent-info">
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ1</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ2</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ3</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ4</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ5</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="product-detail.html">
+                        <div class="product-item-img">
+                            <img src="product.jpg" alt="product image">
+                        </div>
+                        <div class="product-item-name">
+                            <span>Son Shu Uemura Rouge Amplified Matte son lì, mềm mịn #156 đỏ hồng tươi trẻ7</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span><b>579000 đ</b></span>
+                        </div>
+                    </a>
+                    <div>
+                        <button type="button" class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                    </div>
                 </div>
             </div>
         </div>
