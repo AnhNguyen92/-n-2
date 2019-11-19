@@ -283,11 +283,11 @@ table a:hover {
 }
 
 /* class for hide spin in input tag */
-.quantity::-webkit-inner-spin-button, 
+/*.quantity::-webkit-inner-spin-button, 
 .quantity::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
+    -webkit-appearance: none; 
+    margin: 0; 
+}*/
 
 /* product-detail */
 .product-content {
@@ -308,6 +308,7 @@ table a:hover {
 .product-detail-info {
     padding:0px 30px;
     margin-bottom: 20px;
+    position:relative;
 }
 
 .product-detail-info > div {
@@ -353,6 +354,45 @@ table a:hover {
     color:#ff6501;
 }
 
+.quantity-product {
+    border: 1px solid grey;
+    text-align: center;
+    width: 166px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.quantity-product * {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.quantity-up-btn, .quantity-down-btn {
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quantity-up-btn {
+    background: #3c9b10;
+}
+
+.quantity-input {
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
 /*cần style lại sau*/
 .product-buy, .product-add-to-cart {
     text-transform: uppercase;
@@ -361,6 +401,9 @@ table a:hover {
     text-transform: uppercase;
     background: #4caf50;
     margin-top: 15px;
+}
+.product-buy {
+    background: #f39f21;
 }
 
 .product-revalent-title {
@@ -1110,6 +1153,7 @@ table a:hover {
     border-radius: 5px;
     color: white;
     font-size: 16px;
+    height: 33px;
 }
 
 /* register page, login page */

@@ -6,53 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./drift-basic.css">
     <title>Beauty Comestic</title>
-    <style>
-        .quantity-product {
-            border:1px solid grey;
-            text-align:center;
-            
-            width:166px;
-            display:flex;
-            border-radius: 5px;
-        }
-    
-        .quantity-product * {
-            font-size: x-large;
-            font-weight: 600;
-        }
-    
-        .quantity-up-btn, .quantity-down-btn {
-            width:35px;
-            height:35px;
-            margin:0px;
-            padding:0px;
-        }
-    
-        .quantity-up-btn {
-            background:#3c9b10;;
-        }
-    
-        /* .quantity-down-btn {
-            background:red;
-        } */
-    
-        .quantity-input {
-            text-align:center;
-            width:100px;
-            height:35px;
-            margin: 0px;
-            padding:0px;
-        }
-    
-        .quantity-input::-webkit-outer-spin-button,
-        .quantity-input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            /*appearance: none;*/
-            margin: 0;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -99,11 +55,12 @@
         <li class="navi-item"><a href="#contact">Liên Lạc</a></li>
         <li class="navi-item"><a href="#about">Giới Thiệu</a></li>
     </ul>
+
     <div class="product-content">
         <div class="product-image">
             <div class="product-image-content">
                 <!--hình ảnh sản phẩm-->
-                <img src="product.jpg" width="400" height="400" alt="image"/>
+                <img id="image" class="product-image-detail" data-zoom="product.jpg" src="product.jpg" width="400" height="400" alt="image">
             </div>
             <div class="product-detail-info">
                 <div class="product-content-title">
@@ -144,7 +101,7 @@
             </div>
         </div>
     </div>
-    <!--sản phẩm cùng loại, hiển thị 6 sản phẩm-->
+    <!--sản phẩm cùng loại, chỉ hiển thị 6 sản phẩm -->
     <div class="product-revalent">
         <div class="product-revalent-title">
             <span>SẢN PHẨM CÙNG LOẠI</span>
@@ -262,63 +219,55 @@
                 <label class="footer-title"><b>Thông tin liên hệ</b></label>
                 <div class="footer-contact-item">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <a href="https://www.google.com/maps/dir//142+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh,+Ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7720287,106.6576874,17z/data=!4m17!1m7!3m6!1s0x31752ec23433c3df:0x7b0fd22fbcc9f619!2zMTQyIFTDtCBIaeG6v24gVGjDoG5oLCBQaMaw4budbmcgMTQsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!3b1!8m2!3d10.775638!4d106.662969!4m8!1m0!1m5!1m1!1s0x31752ec23433c3df:0x7b0fd22fbcc9f619!2m2!1d106.6598761!2d10.7720234!3e2">
-                        142
-                        Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh
-                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir//142+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh,+Ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7720287,106.6576874,17z/data=!4m17!1m7!3m6!1s0x31752ec23433c3df:0x7b0fd22fbcc9f619!2zMTQyIFTDtCBIaeG6v24gVGjDoG5oLCBQaMaw4budbmcgMTQsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!3b1!8m2!3d10.775638!4d106.662969!4m8!1m0!1m5!1m1!1s0x31752ec23433c3df:0x7b0fd22fbcc9f619!2m2!1d106.6598761!2d10.7720234!3e2">142 Tô Hiến Thành, P.14, Q.10, Tp Hồ Chí Minh</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <a href="https://www.google.com/maps/dir//268+L%C3%BD+Th%C6%B0%E1%BB%9Dng+Ki%E1%BB%87t,+ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh/@10.7732746,106.6572743,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x31752ec177d40f03:0xe2a4453bf3b638c!2m2!1d106.659463!2d10.7732693!3e2">
-                        268,
-                        Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh
-                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir//268+L%C3%BD+Th%C6%B0%E1%BB%9Dng+Ki%E1%BB%87t,+ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh/@10.7732746,106.6572743,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x31752ec177d40f03:0xe2a4453bf3b638c!2m2!1d106.659463!2d10.7732693!3e2">268, Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-mobile" aria-hidden="true"></i>
-                    <label>098 7789 928</label>
+                    <a href="tel:0912345678">091 2345 678</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <label>contact@beautifulcomestic.com</label>
+                    <a href="mailto:contact@beautifulcomestic.com">contact@beautifulcomestic.com</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-globe" aria-hidden="true"></i>
-                    <a href="#" title="beautifulcomestic.com">beautifulcomestic.com</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#" title="beautifulcomestic.com">beautifulcomestic.com</a>
                 </div>
             </div>
             <div class="footer-link">
                 <label class="footer-title"><b>Thông tin thêm</b></label>
                 <div class="footer-contact-item">
                     <i class="fa fa-play" aria-hidden="true"></i>
-                    <a href="#">Giới thiệu</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#">Giới thiệu</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-play" aria-hidden="true"></i>
-                    <a href="#">Liên hệ</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#">Liên hệ</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-play" aria-hidden="true"></i>
-                    <a href="#">Phương thức thanh toán</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#">Phương thức thanh toán</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-play" aria-hidden="true"></i>
-                    <a href="#">Hướng dẫn đổi trả</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#">Hướng dẫn đổi trả</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fa fa-play" aria-hidden="true"></i>
-                    <a href="#" title="beautifulcomestic.com">Chính sách bảo mật</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#" title="beautifulcomestic.com">Chính sách bảo mật</a>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>
-                &copy; 2019 <a href="#" title="beautifulcomestic.com">beautifulcomestic.com</a> - Dương Đức Anh
-                (1533408) - Nguyễn Tuấn Anh (1733403)
-            </p>
+            <p>&copy; 2019 <a href="#" title="beautifulcomestic.com">beautifulcomestic.com</a> - Dương Đức Anh (1533408) - Dương Đức Anh (1733403)</p>
         </div>
     </div>
     <script>
+        //quay về đầu trang
         var mybutton = document.getElementById("scroll-to-top");
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
@@ -332,6 +281,12 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+    <script src="Drift.js"></script>
+    <script>
+        new Drift(document.querySelector('.product-image-detail'), {
+            paneContainer: document.querySelector('.product-detail-info')   
+        });
     </script>
 </body>
 
