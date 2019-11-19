@@ -1,26 +1,25 @@
-# DoAn-2
+# Beauty Cosmetic
 DoAn-2 là 1 đồ án môn học được thực hiện bởi Tuấn Anh và Dương Đức Anh. Nhiệm vụ là thực hiện 1 trang web thương mại điện tử bán hàng mỹ phẩm.
-Source code bao gồm 3 phần chính:
-    - HTML: các trang thành phần.
-    - CSS: style css cho các trang web
-    - Image, icon được sử dụng
-Do mục đích học tập, nên project hạn chế tối đa sử dụng thư viện, chưa chia thư mục như các project thực tế. Các ngôn ngữ được sử dụng bao gồm:
-    -Html, css
-    -Javascript
-    -Php (chưa được public)
-Phần html gồm các trang sau:
-    - register: trang đăng ký thành viên
-    - login: trang đăng nhập
-    - introduce: giới thiệu về trang web
-    - contact: thông tin các cơ sở, điện thoại, email liên hệ
-    - private-policy: chính sách bảo mật thông tin
-    - cart: trang giỏ hàng
-    - checkout: trang thanh toán
-    - product-return-policy: chính sách đổi trả sản phẩm
-    - profile: trang thông tin cá nhân
-    - profile-address: trang lưu sửa thông tin địa chỉ
-    - profile-password: trang thay đổi mật khẩu
- Phần css:
-    - File main.css sẽ lưu code style của tất cả các trang web. phần tên của class sẽ chứa từ đầu tiên để chỉ class đó thuộc trang nào,
-        các từ sau nhắm nêu nội dung được style.
-    - Trước mỗi phần style của các trang đều có chú thích cho dễ tìm.
+### Prerequisites
+Không có
+### Installing
+Chỉ cần có trình duyệt và ứng dụng đọc file text cơ bản.
+## Usage
+Source code chỉ gồm các file ảnh, html, js nên có thể chạy ngay trên trình duyệt.
+### And coding style tests
+Source code được validate code tại [The W3C Markup Validation Service](http://validator.w3.org/) và test trên 4 trình duyệt Chrome, FireFox, Safari, Brave.
+## Deployment
+Chỉ cần download và mở cá file html lên trình duyệt bất kỳ. Do mục đích học tập nên project hạn chế dùng framework và chưa có media screen cho các thiết bị nhỏ hơn laptop.
+## Built With
+* [HTML](https://www.w3schools.com/html/)
+* [CSS](https://www.w3schools.com/css/)
+* [JAVASCRIPT](https://www.w3schools.com/js/)
+* [FONT AWESOME-ICON] (https://fontawesome.com/icons?d=gallery)
+## Contributing
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Versioning
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Authors
+* **Tuan Anh** - *Initial work* - [Anh.Nguyen](https://https://github.com/AnhNguyen92)
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
