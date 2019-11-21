@@ -82,14 +82,19 @@ form.hd-search-frm::after {
 }
 
 .hd-banner * {
-    width: 50%;
     float: left;
     height: inherit;
 }
 
+.hd-hotline {
+    height: 60px;
+    width: 280px; 
+}
+
 .hd-hotline-img {
     width: 85%;
-    max-height: 62px;
+    max-height: 56px;
+    
 }
 
 .hd-cart-icon {
