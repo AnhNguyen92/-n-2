@@ -1208,6 +1208,7 @@ table a:hover {
     float: right;
     margin-top: 20px;
     margin-bottom:10px;
+    display: flex;
 }
 
 .rg-lg-btn button {
@@ -1219,10 +1220,18 @@ table a:hover {
 .rg-lg-btn-left {
     border: 0;
     cursor: pointer;
+    display:inline-block;
+    width:152px;
+    height:inherit;
+    line-height: 39px;
+    text-align: center;
+    background: #c5c3c3;
+    text-decoration: none !important;
 }
 
-.rg-lg-btn-left:hover {
-    color:white;
+.rg-lg-btn a:hover {
+    color:white !important;
+    
 }
 
 .rg-lg-btn-right {
